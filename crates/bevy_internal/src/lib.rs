@@ -134,6 +134,12 @@ pub mod pbr {
     pub use bevy_pbr::*;
 }
 
+#[cfg(feature = "bevy_i18n")]
+pub mod i18n {
+    //! Support for internationalization
+    pub use bevy_i18n::*;
+}
+
 #[cfg(feature = "bevy_render")]
 pub mod render {
     //! Cameras, meshes, textures, shaders, and pipelines.

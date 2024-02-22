@@ -107,6 +107,9 @@ bevy_gilrs = ["bevy_internal/bevy_gilrs"]
 # [glTF](https://www.khronos.org/gltf/) support
 bevy_gltf = ["bevy_internal/bevy_gltf", "bevy_asset", "bevy_scene", "bevy_pbr"]
 
+# Adds support for Internationalization (i18n)
+bevy_i18n = ["bevy_internal/bevy_i18n"]
+
 # Adds PBR rendering
 bevy_pbr = [
   "bevy_internal/bevy_pbr",
@@ -1685,6 +1688,19 @@ name = "Game Menu"
 description = "A simple game menu"
 category = "Games"
 wasm = true
+
+# I18n
+[[example]]
+name = "localization"
+path = "examples/i18n/localization.rs"
+doc-scrpae-examples = true
+required-features = ["bevy_i18n"]
+
+[package.metadata.example.localization]
+name = "Localization"
+description = "Simple usage of a localization plugin"
+category = "I18n"
+# wasm = ?
 
 # Input
 [[example]]

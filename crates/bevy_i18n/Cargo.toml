@@ -1,0 +1,23 @@
+[package]
+name = "bevy_i18n"
+version = "0.1.0"
+edition = "2021"
+description = "Provide interoperability for internationalization (i18n) within the bevy engine"
+homepage = "https://bevyengine.org"
+repository = "https://github.com/bevyengine/bevy"
+license = "MIT OR Apache-2.0"
+keywords = ["bevy"]
+
+[dependencies]
+# bevy
+bevy_app = { path = "../bevy_app", version = "0.13.0" }
+bevy_ecs = { path = "../bevy_ecs", version = "0.13.0" }
+bevy_asset = { path = "../bevy_asset", version = "0.13.0" }
+bevy_log = { path = "../bevy_log", version = "0.13.0" }
+
+# others
+unic-langid = "0.9"
+unic-langid-impl = "0.9"
+
+[lints]
+workspace = true

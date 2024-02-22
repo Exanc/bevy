@@ -135,6 +135,8 @@ accesskit_unix = ["bevy_winit/accesskit_unix"]
 
 bevy_text = ["dep:bevy_text", "bevy_ui?/bevy_text"]
 
+bevy_i18n = ["dep:bevy_i18n"]
+
 bevy_render = ["dep:bevy_render", "bevy_scene?/bevy_render"]
 
 # Enable assertions to check the validity of parameters passed to glam
@@ -186,6 +188,7 @@ bevy_animation = { path = "../bevy_animation", optional = true, version = "0.13.
 bevy_asset = { path = "../bevy_asset", optional = true, version = "0.13.0" }
 bevy_audio = { path = "../bevy_audio", optional = true, version = "0.13.0" }
 bevy_core_pipeline = { path = "../bevy_core_pipeline", optional = true, version = "0.13.0" }
+bevy_i18n = { path = "../bevy_i18n", optional = true, version = "0.1.0" }
 bevy_gltf = { path = "../bevy_gltf", optional = true, version = "0.13.0" }
 bevy_pbr = { path = "../bevy_pbr", optional = true, version = "0.13.0" }
 bevy_render = { path = "../bevy_render", optional = true, version = "0.13.0" }
